@@ -391,6 +391,12 @@ Array.from(document.getElementsByClassName('lateReleases')).forEach(function(ele
     ele.getElementsByTagName('h5')[0].innerHTML=latestRelease[i].songName;
 });
 
+const allPause=function(){
+    Array.from(document.getElementsByClassName('recent_play')).forEach(function(ele){
+        ele.classList.remove('fa-circle-pause');
+        ele.classList.add('fa-circle-play');
+    });
+}
 playbtn.addEventListener('click',function(){
     if(music.paused || music.currentTime<=0)
     {
@@ -404,15 +410,11 @@ playbtn.addEventListener('click',function(){
         playbtn.classList.remove('fa-pause');
         playbtn.classList.add('fa-play');
         wave.classList.remove('active2');
+        allPause();
     }
 });
 
-const allPause=function(){
-    Array.from(document.getElementsByClassName('recent_play')).forEach(function(ele){
-        ele.classList.remove('fa-circle-pause');
-        ele.classList.add('fa-circle-play');
-    });
-}
+
 
 let idx=0;
 let bottom_poster=document.getElementById('bottom_poster');
@@ -426,5 +428,8 @@ Array.from(document.getElementsByClassName('recent_play')).forEach(function(ele)
         music.src=`recent_songs/${idx}.mp3`;
         bottom_poster.src=`recently_played/${idx}.jpg`;
         music.play();
+        playbtn.classList.remove('fa-play');
+        playbtn.classList.add('fa-pause');
+        wave.classList.add('active2');
     })
 });
