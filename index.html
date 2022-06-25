@@ -24,7 +24,7 @@ poppins,sanserif
 				<h4><span></span><i class="fa-solid fa-music"></i>Recommended</h4>
 			</div>
 			<div class="menusong">
-				<li>
+				<li class="songItem">
 					<span>01</span>
 					<img src="../PICTURES\alanwalker.jpg">
 					<h5>Faded
@@ -32,7 +32,7 @@ poppins,sanserif
 					</h5>
 					<i class="fa-solid fa-heart play_song filled"></i>
 				</li>
-				<li>
+				<li class="songItem">
 					<span>02</span>
 					<img src="../PICTURES\bholenath.jpg">
 					<h5>Bholenath
@@ -40,7 +40,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song filled"></i>
 				</li>
-				<li>
+				<li class="songItem">
 					<span>03</span>
 					<img src="../PICTURES\duniyaa.jpg">
 					<h5>Duniyaa
@@ -48,7 +48,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song unfilled"></i>
 				</li>
-				<li>
+				<li class="songItem">
 					<span>04</span>
 					<img src="../PICTURES\blank space.jpg">
 					<h5>Blank Space
@@ -56,7 +56,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song unfilled"></i>
 				</li>	
-				<li>
+				<li class="songItem">
 					<span>05</span>
 					<img src="../PICTURES\ik vaari aa.jpg">
 					<h5>Ik Vaari Aa
@@ -64,7 +64,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song unfilled"></i>
 				</li>	
-				<li>
+				<li class="songItem">
 					<span>06</span>
 					<img src="../PICTURES\shape of you.jpg">
 					<h5>Shape Of You
@@ -72,7 +72,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song unfilled"></i>
 				</li>	
-				<li>
+				<li class="songItem">
 					<span>07</span>
 					<img src="../PICTURES\shape of you.jpg">
 					<h5>Shape Of You
@@ -80,7 +80,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song unfilled"></i>
 				</li>	
-				<li>
+				<li class="songItem">
 					<span>08</span>
 					<img src="../PICTURES\shape of you.jpg">
 					<h5>Shape Of You
@@ -88,7 +88,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song unfilled"></i>
 				</li>	
-				<li>
+				<li class="songItem">
 					<span>09</span>
 					<img src="../PICTURES\shape of you.jpg">
 					<h5>Shape Of You
@@ -96,7 +96,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song unfilled"></i>
 				</li>	
-				<li>
+				<li class="songItem">
 					<span>10</span>
 					<img src="../PICTURES\shape of you.jpg">
 					<h5>Shape Of You
@@ -104,7 +104,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song unfilled"></i>
 				</li>	
-				<li>
+				<li class="songItem">
 					<span>11</span>
 					<img src="../PICTURES\shape of you.jpg">
 					<h5>Shape Of You
@@ -112,7 +112,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song unfilled"></i>
 				</li>	
-				<li>
+				<li class="songItem">
 					<span>12</span>
 					<img src="../PICTURES\shape of you.jpg">
 					<h5>Shape Of You
@@ -120,7 +120,7 @@ poppins,sanserif
 					</h5>
 						<i class="fa-solid fa-heart play_song unfilled"></i>
 				</li>	
-					
+
 			</div>
 		</div>
 		<div class="songside">
@@ -980,13 +980,13 @@ poppins,sanserif
 				<div class="wave1"></div>
 			</div>
 			<img src="../PICTURES\alanwalker.jpg">
-			<h5>Faded
+			<h5 id="title">Faded
 					<div class="artist">Alan Walker</div>
 			</h5>
 			<div class="skip_play">
-				<i class="fa-solid fa-backward-step sp1"></i>
-				<i class="fa-solid fa-play play"></i>
-				<i class="fa-solid fa-forward-step sp2"></i>
+				<i class="fa-solid fa-backward-step sp1" id="backButton"></i>
+				<i class="fa-solid fa-play play" id="playButton"></i>
+				<i class="fa-solid fa-forward-step sp2" id="nextButton"></i>
 			</div>
 			<div class="start_time">00:00</div>
 			<div class="song_range">
@@ -1006,5 +1006,6 @@ poppins,sanserif
 			</div>
 		</div>
 	</header>
+	<script src="app.js"></script>
 </body>
 </html>
