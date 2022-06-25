@@ -1,0 +1,961 @@
+<!--
+#131312
+poppins,sanserif
+#111727
+#000f1f
+#4c5262
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MuSiC PlAyEr</title>
+	<link rel="stylesheet" type="text/css" href="music.css">
+	<script src="https://kit.fontawesome.com/4c038a7f7d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div class="menuside">
+			<h1>Playlist</h1>
+			<div class="playlist">
+				<h4 class="show"><span></span><i class="fa-solid fa-music"></i>Playlist</h4>
+				<h4><span></span><i class="fa-solid fa-music"></i>Last Playing</h4>
+				<h4><span></span><i class="fa-solid fa-music"></i>Recommended</h4>
+			</div>
+			<div class="menusong">
+				<li>
+					<span>01</span>
+					<img src="../PICTURES\alanwalker.jpg">
+					<h5>Faded
+						<div class="artist">Alan Walker</div>
+					</h5>
+					<i class="fa-solid fa-heart play_song filled"></i>
+				</li>
+				<li>
+					<span>02</span>
+					<img src="../PICTURES\bholenath.jpg">
+					<h5>Bholenath
+						<div class="artist">Kaka</div>
+					</h5>
+						<i class="fa-solid fa-heart play_song filled"></i>
+				</li>
+				<li>
+					<span>03</span>
+					<img src="../PICTURES\duniyaa.jpg">
+					<h5>Duniyaa
+						<div class="artist">Dhvani Bhanushali</div>
+					</h5>
+						<i class="fa-solid fa-heart play_song unfilled"></i>
+				</li>
+				<li>
+					<span>04</span>
+					<img src="../PICTURES\blank space.jpg">
+					<h5>Blank Space
+						<div class="artist">Taylor Swift</div>
+					</h5>
+						<i class="fa-solid fa-heart play_song unfilled"></i>
+				</li>	
+				<li>
+					<span>05</span>
+					<img src="../PICTURES\ik vaari aa.jpg">
+					<h5>Ik Vaari Aa
+						<div class="artist">Arijit Singh</div>
+					</h5>
+						<i class="fa-solid fa-heart play_song unfilled"></i>
+				</li>	
+				<li>
+					<span>06</span>
+					<img src="../PICTURES\shape of you.jpg">
+					<h5>Shape Of You
+						<div class="artist">Ed Sheeran</div>
+					</h5>
+						<i class="fa-solid fa-heart play_song unfilled"></i>
+				</li>		
+			</div>
+		</div>
+		<div class="songside">
+			<nav>
+				<div class="target_burger">
+					<a href="#hamburger_target">
+						<div class="burger">
+							<div class="bur_line"></div>
+							<div class="bur_line"></div>
+							<div class="bur_line"></div>
+						</div>
+					</a>
+				</div>
+				<div id="hamburger_target">
+					<a href="#">X</a>
+					<li>Playlist</li>
+					<li>Last Playing</li>
+					<li>Recommended</li>
+					<li class="hide-one">Radio</li>
+					<li class="hide-two">Discover</li>
+				</div>
+				<ul>
+					<li class="v-class2">DISCOVER</li>
+					<li class="v-class">MY PLAYLIST</li>
+					<li class="v-class">RADIO</li>
+				</ul>
+				<div class="search_music">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<input type="text" placeholder="Search Music..">
+				</div>
+				<div class="profile">
+					<a href="#hamburger_target2">
+						<div class="user_profile">
+							<img src="../PICTURES\PROFILE PIC.jpeg" title="Pratham Bapna">
+						</div>
+					</a>
+				</div>
+				<div id="hamburger_target2">
+					<a href="#">X</a>
+					<li>Profile</li>
+					<li>Playlist</li>
+					<li>Last Playing</li>
+					<li>Recommended</li>
+					<li >Radio</li>
+					<li >Discover</li>
+				</div>
+			</nav>
+			<!-- <div class="heading_images">
+				<li class="nohide">
+					<img src="../PICTURES\upcoming song.jpg">
+				</li>
+				<li class="nohide">
+					<img src="../PICTURES\new release.jpg">
+				</li>
+				<li class="hide">
+					<img src="../PICTURES\classic albums.jpg">
+				</li>
+			</div> -->
+			<div class="popular_song">
+				<div class="pop_head">
+					<h4>Recently Played</h4>
+					<div class="front_back">
+						<i class="fa-solid fa-arrow-left"></i>
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+				<div class="pop_list">
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\on my way.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>On My Way
+							<br>
+							<div class="artist">Alan Walker</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\closer.jpg" title="Closer">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Closer
+							<br>
+							<div class="artist">Chainsmokers</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\najaa.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Najaa
+							<br>
+							<div class="artist">Arijit Singh</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\perfect.jpg" title="Perfect">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Perfect
+							<br>
+							<div class="artist">Ed Sheeran</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\wavin flag.jpg" title="Wavin Flag">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Wavin Flag
+							<br>
+							<div class="artist">K'naan</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\drag me down.jpg" title="Drag Me Down">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Drag Me Down
+							<br>
+							<div class="artist">One Direction</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\love me like you do.jpg" title="Love Me Like You Do">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Love Me Like You Do
+							<br>
+							<div class="artist">Ellie Goulding</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\tera hone laga hoon.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Tera hone Laga Hoon
+							<br>
+							<div class="artist">Atif Aslam</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\bekhayali.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Bekhayali
+							<br>
+							<div class="artist">Sachet Tandon</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\blank space.jpg" title="Blank Space">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Blank Space
+							<br>
+							<div class="artist">Taylor Swift</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\on my way.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>On My Way
+							<br>
+							<div class="artist">Alan Walker</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\on my way.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>On My Way
+							<br>
+							<div class="artist">Alan Walker</div>
+						</h5>
+					</li>
+					
+				</div>
+			</div>
+			<div class="popular_song">
+				<div class="pop_head">
+					<h4>Latest Release </h4>
+					<div class="front_back">
+						<i class="fa-solid fa-arrow-left"></i>
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+				<div class="pop_list">
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\duniyaa.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Duniyaa
+							<br>
+							<div class="artist">Dhvani Bhanushali</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\tujhe sochta hoon.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Tujhe sochta hoon
+							<br>
+							<div class="artist">Pritam</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\bholenath.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Bholenath
+							<br>
+							<div class="artist">Kaka</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\ik vaari aa.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Ik Vaari Aa
+							<br>
+							<div class="artist">Arijit Singh</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\alanwalker.jpg" title="faded">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Faded
+							<br>
+							<div class="artist">Alan Walker</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\blank space.jpg" title="Blank Space">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Blank Space
+							<br>
+							<div class="artist">Taylor Swift</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\on my way.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>On My Way
+							<br>
+							<div class="artist">Alan Walker</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\closer.jpg" title="Closer">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Closer
+							<br>
+							<div class="artist">Chainsmokers</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\najaa.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Najaa
+							<br>
+							<div class="artist">Arijit Singh</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\love me like you do.jpg" title="Love Me Like You Do">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Love Me Like You Do
+							<br>
+							<div class="artist">Ellie Goulding</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\perfect.jpg" title="Perfect">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Perfect
+							<br>
+							<div class="artist">Ed Sheeran</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\wavin flag.jpg" title="Wavin Flag">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Wavin Flag
+							<br>
+							<div class="artist">K'naan</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\drag me down.jpg" title="Drag Me Down">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Drag Me Down
+							<br>
+							<div class="artist">One Direction</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\tera hone laga hoon.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Tera hone Laga Hoon
+							<br>
+							<div class="artist">Atif Aslam</div>
+						</h5>
+					</li>
+					<li class="songlistpop">
+						<div class="imgplay">
+							<img src="../PICTURES\bekhayali.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Bekhayali
+							<br>
+							<div class="artist">Sachet Tandon</div>
+						</h5>
+					</li>
+				</div>
+			</div>
+			<div class="popular_artist">
+				<div class="popartist_head">
+					<h4>Popular Artist</h4>
+					<div class="front_back">
+						<i class="fa-solid fa-arrow-left"></i>
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+				<div class="pop_artist">
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+								<img src="../PICTURES\arijit.jpg" title="Arijit Singh">
+							</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+								<img src="../PICTURES\alan waler.jpg" title="Alan Walker">
+							</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+								<img src="../PICTURES\ed sheeran.jpg" title="Ed Sheeran">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\justin beiber.jpg" title="Justin Beiber">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\taylor swift.jpg" title="Taylor Swift">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+						<a href="artist_playlist.html">
+							<img src="../PICTURES\atif aslam.jpg" title="Atif Aslam">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\one direction.jpg" title="One Direction">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\sonu nigam.jpg" title="Sonu Nigam">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\shreya ghoshal.jpg" title="Shreya Ghoshal">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\ed sheeran.jpg" title="Ed Sheeran">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<img src="../PICTURES\justin beiber.jpg" title="Justin Beiber">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\taylor swift.jpg" title="Taylor Swift">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\atif aslam.jpg" title="Atif Aslam">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+				</div>
+			</div>
+			<div class="eng_latest">
+				<div class="eng_head">
+					<h4>Latest English</h4>
+					<div class="front_back">
+						<i class="fa-solid fa-arrow-left"></i>
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+				<div class="eng_content">
+					<li>
+						<div class="eng_img">
+							<img src="../PICTURES\alanwalker.jpg" title="faded">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Faded
+							<br>
+							<div class="artist">Alan Walker</div>
+						</h5>
+					</li>
+					<li>
+						<div class="eng_img">
+							<img src="../PICTURES\on my way.jpg" title="On My Way">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>On My Way
+							<br>
+							<div class="artist">Alan Walker</div>
+						</h5>
+					</li>
+					<li>
+						<div class="eng_img">
+							<img src="../PICTURES\blank space.jpg" title="Blank Space">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Blank Space
+							<br>
+							<div class="artist">Taylor Swift</div>
+						</h5>
+					</li>
+					<li>
+						<div class="eng_img">
+							<img src="../PICTURES\closer.jpg" title="Closer">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Closer
+							<br>
+							<div class="artist">Chainsmokers</div>
+						</h5>
+					</li>
+					<li>
+						<div class="eng_img">
+							<img src="../PICTURES\perfect.jpg" title="Perfect">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Perfect
+							<br>
+							<div class="artist">Ed Sheeran</div>
+						</h5>
+					</li>
+					<li>
+						<div class="eng_img">
+							<img src="../PICTURES\love me like you do.jpg" title="Love Me Like You Do">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Love Me Like You Do
+							<br>
+							<div class="artist">Ellie Goulding</div>
+						</h5>
+					</li>
+					<li>
+						<div class="eng_img">
+							<img src="../PICTURES\drag me down.jpg" title="Drag Me Down">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Drag Me Down
+							<br>
+							<div class="artist">One Direction</div>
+						</h5>
+					</li>
+					<li>
+						<div class="eng_img">
+							<img src="../PICTURES\wavin flag.jpg" title="Wavin Flag">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Wavin Flag
+							<br>
+							<div class="artist">K'naan</div>
+						</h5>
+					</li>
+					<li>
+						<div class="eng_img">
+							<img src="../PICTURES\shape of you.jpg" title="Shape Of You">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Shape Of You
+							<br>
+							<div class="artist">Ed Sheeran</div>
+						</h5>
+					</li>
+				</div>
+			</div>
+			<div class="hindi_latest">
+				<div class="hindi_head">
+					<h4>Latest Hindi</h4>
+					<div class="front_back">
+						<i class="fa-solid fa-arrow-left"></i>
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+				<div class="hindi_content">
+					<li>
+						<div class="hindi_img">
+							<img src="../PICTURES\najaa.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Najaa
+							<br>
+							<div class="artist">Arijit Singh</div>
+						</h5>
+					</li>
+					<li>
+						<div class="hindi_img">
+							<img src="../PICTURES\besharmi ki height.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Besharmi ki Height
+							<br>
+							<div class="artist">Benny Dayal</div>
+						</h5>
+					</li>
+					<li>
+						<div class="hindi_img">
+							<img src="../PICTURES\waalian.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Waalian
+							<br>
+							<div class="artist">Harnoor</div>
+						</h5>
+					</li>
+					<li>
+						<div class="hindi_img">
+							<img src="../PICTURES\bekhayali.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Bekhayali
+							<br>
+							<div class="artist">Sachet Tandon</div>
+						</h5>
+					</li>
+					<li>
+						<div class="hindi_img">
+							<img src="../PICTURES\tera hone laga hoon.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Tera hone Laga Hoon
+							<br>
+							<div class="artist">Atif Aslam</div>
+						</h5>
+					</li>
+					<li>
+						<div class="hindi_img">
+							<img src="../PICTURES\duniyaa.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Duniyaa
+							<br>
+							<div class="artist">Dhvani Bhanushali</div>
+						</h5>
+					</li>
+					<li>
+						<div class="hindi_img">
+							<img src="../PICTURES\tujhe sochta hoon.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Tujhe sochta hoon
+							<br>
+							<div class="artist">Pritam Chakrabatory</div>
+						</h5>
+					</li>
+					<li>
+						<div class="hindi_img">
+							<img src="../PICTURES\bholenath.jpg"">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Bholenath
+							<br>
+							<div class="artist">Kaka</div>
+						</h5>
+					</li>
+					<li>
+						<div class="hindi_img">
+							<img src="../PICTURES\ik vaari aa.jpg">
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+						<h5>Ik Vaari Aa
+							<br>
+							<div class="artist">Arijit Singh</div>
+						</h5>
+					</li>
+				</div>
+			</div>
+			<div class="similar_artist">
+				<div class="simartist_head">
+					<h4>Similar Artist</h4>
+					<div class="front_back">
+						<i class="fa-solid fa-arrow-left"></i>
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+				<div class="sim_artist">
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\atif aslam.jpg" title="Atif Aslam">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\justin beiber.jpg" title="Justin Beiber">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\shreya ghoshal.jpg" title="Shreya Ghoshal">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\arijit.jpg" title="Arijit Singh">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\ed sheeran.jpg" title="Ed Sheeran">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\taylor swift.jpg" title="Taylor Swift">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\atif aslam.jpg" title="Atif Aslam">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\one direction.jpg" title="One Direction">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\sonu nigam.jpg" title="Sonu Nigam">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\alan waler.jpg" title="Alan Walker">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\ed sheeran.jpg" title="Ed Sheeran">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\justin beiber.jpg" title="Justin Beiber">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+					<li>
+						<div class="artist_img">
+							<a href="artist_playlist.html">
+							<img src="../PICTURES\taylor swift.jpg" title="Taylor Swift">
+						</a>
+							<i class="fa-solid fa-circle-play"></i>
+						</div>
+					</li>
+				</div>
+			</div>
+			<div class="stations">
+				<li class="subs">
+					<div>
+						MUSIC STATION
+					</div>
+				</li>
+				<li class="substations">
+					<div class="stname">
+						<img src="../PICTURES\love.jpg">
+						<h4>Love</h4>
+					</div>
+				</li>
+				<li class="substations">
+					<div class="stname">
+						<img src="../PICTURES\radio.jpg">
+						<h4>Radio</h4>
+					</div>
+				</li>
+				<li class="substations">
+					<div class="stname">
+						<img src="../PICTURES\joshua-fuller-ta7rN3NcWyM-unsplash.jpg">
+						<h4>Party</h4>
+					</div>
+				</li>
+				<li class="substations">
+					<div class="stname">
+						<img src="../PICTURES\chill.jpg">
+						<h4>Chill</h4>
+					</div>
+				</li>
+				<li class="substations">
+					<div class="stname">
+						<img src="../PICTURES\workout.jpg">
+						<h4>Workout</h4>
+					</div>
+				</li>
+				<li class="substations">
+					<div class="stname">
+						<img src="../PICTURES\rock.jpg">
+						<h4>Rock</h4>
+					</div>
+				</li>
+				<li class="substations">
+					<div class="stname">
+						<img src="../PICTURES\pop.jpg">
+						<h4>Pop</h4>
+					</div>
+				</li>
+			</div>
+			<div class="modes">
+				<li class="mode_content">
+					<div class="mo">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQKsnFvHeXyyVm1ifof140MRSSMY9WRmloFA&usqp=CAU">
+						<h4>PARTY</h4>
+					</div>
+				</li>
+				<li class="mode_content">
+					<div class="mo">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg625ylV04b4x5OFOGYrfTKGFInl17BljG5w&usqp=CAU">
+						<h4>ELECTRONIC</h4>
+					</div>
+				</li>
+				<li class="mode_content">
+					<div class="mo">
+						<img src="../PICTURES\road trip.jpg">
+						<h4>ROAD TRIP</h4>
+					</div>
+				</li>
+				
+			</div>
+		</div>
+		<div class="bottomplayer">
+			<div class="wave">
+				<div class="wave1"></div>
+				<div class="wave1"></div>
+				<div class="wave1"></div>
+			</div>
+			<img src="../PICTURES\alanwalker.jpg">
+			<h5>Faded
+					<div class="artist">Alan Walker</div>
+			</h5>
+			<div class="skip_play">
+				<i class="fa-solid fa-backward-step sp1"></i>
+				<i class="fa-solid fa-play play"></i>
+				<i class="fa-solid fa-forward-step sp2"></i>
+			</div>
+			<div class="start_time">00:00</div>
+			<div class="song_range">
+				<input type="range" class="song_bar" min="0" max="100" value="0">
+				<div class="bar"></div>
+				<div class="dot"></div>
+			</div>
+			<div class="end_time">04:23</div>
+			<div class="vol">
+				<i class="fa-solid fa-volume-high"></i>
+				<input type="range" class="vol_input" min="0" max="100" value="0">
+				<div class="vol_bar"></div>
+				<div class="vol_dot"></div>
+			</div>
+			<div class="like">
+				<i class="fa-solid fa-heart"></i>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
