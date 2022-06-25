@@ -415,12 +415,16 @@ const allPause=function(){
 }
 
 let idx=0;
-
+let bottom_poster=document.getElementById('bottom_poster');
+let title=document.getElementById('title');
 Array.from(document.getElementsByClassName('recent_play')).forEach(function(ele){
     ele.addEventListener('click',function(event){
         idx=event.target.id;
         allPause();
         event.target.classList.remove('fa-circle-play');
         event.target.classList.add('fa-circle-pause');
+        music.src=`recent_songs/${idx}.mp3`;
+        bottom_poster.src=`recently_played/${idx}.jpg`;
+        music.play();
     })
 });
