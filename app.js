@@ -439,27 +439,27 @@ vol_input.addEventListener('change',function(){
 
 });
 
-let backButton=document.getElementById('backButton');
+// let backButton=document.getElementById('backButton');
 let nextButton=document.getElementById('nextButton');
 
 
-backButton.addEventListener('click',function(){
-    idx-=1;
-    if(idx<1){
-        idx=Array.from(document.getElementsByClassName('songAlbum')).length;
-    }
-    music.src=`song_album_songs/${idx}.mp3`;
-    bottom_poster.src=`songs_album/${idx}.jpg`;
-    music.play();
-    playbtn.classList.remove('fa-play');
-    playbtn.classList.add('fa-pause');
-    wave.classList.add('active2');
-    let song_title=songs.filter(function(element){
-        return element.id==idx;
-    });
-    let {songName}=song_title[0];
-    title.innerHTML=songName;
-})
+// backButton.addEventListener('click',function(){
+//     idx-=1;
+//     if(idx<1){
+//         idx=Array.from(document.getElementsByClassName('songAlbum')).length;
+//     }
+//     music.src=`song_album_songs/${idx}.mp3`;
+//     bottom_poster.src=`songs_album/${idx}.jpg`;
+//     music.play();
+//     playbtn.classList.remove('fa-play');
+//     playbtn.classList.add('fa-pause');
+//     wave.classList.add('active2');
+//     let song_title=songs.filter(function(element){
+//         return element.id==idx;
+//     });
+//     let {songName}=song_title[0];
+//     title.innerHTML=songName;
+// })
 
 nextButton.addEventListener('click',function(){
     idx+=1;
@@ -541,3 +541,4 @@ back6.addEventListener('click',function(){
 next6.addEventListener('click',function(){
     for6.scrollLeft+=330;
 })
+
