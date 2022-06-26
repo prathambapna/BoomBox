@@ -266,6 +266,7 @@ header .bottomplayer .song_range .bar{
 	position: absolute;
 	top: 0;
 	cursor: pointer;
+	transition: 1s linear;
 }
 header .bottomplayer .song_range .dot{
 	border-radius: 50%;
@@ -313,6 +314,7 @@ header .bottomplayer .vol .vol_bar{
 	position: absolute;
 	top: 0;
 	cursor: pointer;
+	transition: 1s linear;
 }
 header .bottomplayer .vol .vol_dot{
 	border-radius: 50%;
