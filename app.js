@@ -451,14 +451,10 @@ vol_input.addEventListener('change',function(){
 
 let nextButton=document.getElementById('nextButton');
 nextButton.addEventListener('click',function(){
-    console.log(idx);
     idx-=-1;
-    console.log(idx);
-    console.log(Array.from(document.getElementsByClassName('songAlbum')).length);
     if(idx>Array.from(document.getElementsByClassName('songAlbum')).length){
         idx=1;
     }
-    console.log(idx);
     music.src=`music_list/${idx}.mp3`;
     bottom_poster.src=`songs_album/${idx}.jpg`;
     music.play();
@@ -473,7 +469,26 @@ nextButton.addEventListener('click',function(){
         title.innerHTML=songName;
     })
 })
-
+let backButton=document.getElementById('backButton');
+backButton.addEventListener('click',function(){
+    idx+=-1;
+    if(idx<=0){
+        idx=Array.from(document.getElementsByClassName('songAlbum')).length;
+    }
+    music.src=`music_list/${idx}.mp3`;
+    bottom_poster.src=`songs_album/${idx}.jpg`;
+    music.play();
+    playbtn.classList.remove('fa-play');
+    playbtn.classList.add('fa-pause');
+    wave.classList.add('active2');
+    let song_title=songs.filter(function(element){
+        return element.id==idx;
+    });
+    song_title.forEach(ele=>{
+        let {songName}=ele;
+        title.innerHTML=songName;
+    })
+})
 
 //back and next in song list
 let back1=document.getElementById('back1');
