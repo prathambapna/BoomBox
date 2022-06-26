@@ -7,306 +7,314 @@ let wave=document.getElementsByClassName('wave')[0];
 const songs=[
     {
         id:'1',
-        songName:`On My Way <br>
-        <div class="artist">Alan Walker</div>`,
+        songName:`Tera hone laga hoon <br>
+        <div class="artist">Atif Aslam</div>`,
         poster:"songs_album/1.jpg"
     },
     {
         id:'2',
-        songName:`Besharmi ki Height
+        songName:`Love Me Like You Do
         <br>
-        <div class="artist">Benny Dayal</div>`,
+        <div class="artist">Ellie Goulding</div>`,
         poster:"songs_album/2.jpg"
     },
+    
     {
         id:'3',
-        songName:`Bholenath
+        songName:`Ik Vaari aa
         <br>
-        <div class="artist">Kaka</div>`,
+        <div class="artist">Arijit Singh</div>`,
         poster:"songs_album/3.jpg"
     },
+    
     {
         id:'4',
-        songName:`Blank Space
+        songName:`Waalian
         <br>
-        <div class="artist">Taylor Swift</div>`,
+        <div class="artist">Harnoor</div>`,
         poster:"songs_album/4.jpg"
     },
+    
     {
         id:'5',
-        songName:`Closer
+        songName:`Tujhe Sochta hoon
         <br>
-        <div class="artist">Chainsmokers</div>`,
+        <div class="artist">Pritam Chakraborty</div>`,
         poster:"songs_album/5.jpg"
     },
+    
     {
         id:'6',
-        songName:`Wavin Flag
+        songName:`Shape of you
         <br>
-        <div class="artist">K'naan</div>`,
+        <div class="artist">Ed Sheeran</div>`,
         poster:"songs_album/6.jpg"
     },
+    
     {
         id:'7',
-        songName:`Duniyaa
+        songName:`Faded
         <br>
-        <div class="artist">Dhvani Bhanushali</div>`,
+        <div class="artist">Alan Walker</div>`,
         poster:"songs_album/7.jpg"
     },
     {
         id:'8',
-        songName:`Perfect
+        songName:`Bekhayali
         <br>
-        <div class="artist">Ed Sheeran</div>`,
+        <div class="artist">Sachet Tandon</div>`,
         poster:"songs_album/8.jpg"
     },
     {
         id:'9',
-        songName:`Love Me Like You Do
-        <br>
-        <div class="artist">Ellie Goulding</div>`,
+        songName:`On My Way <br>
+        <div class="artist">Alan Walker</div>`,
         poster:"songs_album/9.jpg"
     },
     {
         id:'10',
-        songName:`Najaa
+        songName:`Besharmi ki Height
         <br>
-        <div class="artist">Arijit Singh</div>`,
+        <div class="artist">Benny Dayal</div>`,
         poster:"songs_album/10.jpg"
     },
     {
         id:'11',
-        songName:`Bekhayali
+        songName:`Bholenath
         <br>
-        <div class="artist">Sachet Tandon</div>`,
+        <div class="artist">Kaka</div>`,
         poster:"songs_album/11.jpg"
     },
     {
         id:'12',
-        songName:`Drag Me Down
+        songName:`Blank Space
         <br>
-        <div class="artist">One Direction</div>`,
+        <div class="artist">Taylor Swift</div>`,
         poster:"songs_album/12.jpg"
     },
     {
         id:'13',
-        songName:`On My Way <br>
-        <div class="artist">Alan Walker</div>`,
+        songName:`Closer
+        <br>
+        <div class="artist">Chainsmokers</div>`,
         poster:"songs_album/13.jpg"
     },
     {
         id:'14',
-        songName:`Besharmi ki Height
+        songName:`Wavin Flag
         <br>
-        <div class="artist">Benny Dayal</div>`,
+        <div class="artist">K'naan</div>`,
         poster:"songs_album/14.jpg"
     },
     {
         id:'15',
-        songName:`Bholenath
+        songName:`Duniyaa
         <br>
-        <div class="artist">Kaka</div>`,
+        <div class="artist">Dhvani Bhanushali</div>`,
         poster:"songs_album/15.jpg"
     },
     {
         id:'16',
-        songName:`Blank Space
+        songName:`Perfect
         <br>
-        <div class="artist">Taylor Swift</div>`,
+        <div class="artist">Ed Sheeran</div>`,
         poster:"songs_album/16.jpg"
     },
     {
         id:'17',
-        songName:`Closer
+        songName:`Barbaadiyan
         <br>
-        <div class="artist">Chainsmokers</div>`,
+        <div class="artist">Sachet Tandon</div>`,
         poster:"songs_album/17.jpg"
     },
     {
         id:'18',
-        songName:`Wavin Flag
+        songName:`Raataan Lambiyan
         <br>
-        <div class="artist">K'naan</div>`,
+        <div class="artist">Jubin Nautiyal</div>`,
         poster:"songs_album/18.jpg"
     },
     {
         id:'19',
-        songName:`Duniyaa
+        songName:`Duppata
         <br>
-        <div class="artist">Dhvani Bhanushali</div>`,
+        <div class="artist">Shreya Sharma</div>`,
         poster:"songs_album/19.jpg"
     },
     {
         id:'20',
-        songName:`Perfect
+        songName:`Heaven
         <br>
-        <div class="artist">Ed Sheeran</div>`,
+        <div class="artist">Lyodra</div>`,
         poster:"songs_album/20.jpg"
     },
     {
         id:'21',
-        songName:`Love Me Like You Do
+        songName:`Bhool Bhulaiya
         <br>
-        <div class="artist">Ellie Goulding</div>`,
+        <div class="artist">Tanishk Bagchi</div>`,
         poster:"songs_album/21.jpg"
     },
     {
         id:'22',
-        songName:`Najaa
+        songName:`Rockabye
         <br>
-        <div class="artist">Arijit Singh</div>`,
+        <div class="artist">Clean Bandit</div>`,
         poster:"songs_album/22.jpg"
     },
     {
         id:'23',
-        songName:`Bekhayali
+        songName:`Maiyya Mainu
         <br>
-        <div class="artist">Sachet Tandon</div>`,
+        <div class="artist">Sachet–Parampara</div>`,
         poster:"songs_album/23.jpg"
     },
     {
         id:'24',
-        songName:`Drag Me Down
+        songName:`Levitating
         <br>
-        <div class="artist">One Direction</div>`,
+        <div class="artist">Dua Lip</div>`,
         poster:"songs_album/24.jpg"
-    },{
+    },
+    {
         id:'25',
-        songName:`On My Way <br>
-        <div class="artist">Alan Walker</div>`,
+        songName:`Let's Nacho
+        <br>
+        <div class="artist">Badshah</div>`,
         poster:"songs_album/25.jpg"
     },
     {
         id:'26',
-        songName:`Besharmi ki Height
+        songName:`Stay
         <br>
-        <div class="artist">Benny Dayal</div>`,
+        <div class="artist">Justin Beiber</div>`,
         poster:"songs_album/26.jpg"
     },
     {
         id:'27',
-        songName:`Bholenath
+        songName:`Akhiyon se Goli Maare
         <br>
-        <div class="artist">Kaka</div>`,
+        <div class="artist">Mika Singh</div>`,
         poster:"songs_album/27.jpg"
     },
+    
     {
         id:'28',
-        songName:`Blank Space
+        songName:`Kamariyaa
         <br>
-        <div class="artist">Taylor Swift</div>`,
+        <div class="artist">Darshan Raval</div>`,
         poster:"songs_album/28.jpg"
     },
     {
         id:'29',
-        songName:`Closer
+        songName:`Need To Know
         <br>
-        <div class="artist">Chainsmokers</div>`,
+        <div class="artist">Amala Ratna</div>`,
         poster:"songs_album/29.jpg"
     },
     {
         id:'30',
-        songName:`Wavin Flag
+        songName:`Mood
         <br>
-        <div class="artist">K'naan</div>`,
+        <div class="artist">24kGoldn</div>`,
         poster:"songs_album/30.jpg"
     },
     {
         id:'31',
-        songName:`Duniyaa
+        songName:`Safari
         <br>
-        <div class="artist">Dhvani Bhanushali</div>`,
+        <div class="artist">SERENA</div>`,
         poster:"songs_album/31.jpg"
     },
     {
         id:'32',
-        songName:`Perfect
+        songName:`Kill This Love
         <br>
-        <div class="artist">Ed Sheeran</div>`,
+        <div class="artist">BLACKPINK</div>`,
         poster:"songs_album/32.jpg"
     },
     {
         id:'33',
-        songName:`Love Me Like You Do
+        songName:`Tsunami
         <br>
-        <div class="artist">Ellie Goulding</div>`,
+        <div class="artist">Borgeous</div>`,
         poster:"songs_album/33.jpg"
     },
     {
         id:'34',
-        songName:`Najaa
+        songName:`Amplifier
         <br>
-        <div class="artist">Arijit Singh</div>`,
+        <div class="artist">Imran Khan</div>`,
         poster:"songs_album/34.jpg"
     },
     {
         id:'35',
-        songName:`Bekhayali
+        songName:`Off the face
         <br>
-        <div class="artist">Sachet Tandon</div>`,
+        <div class="artist">Justin Beiber</div>`,
         poster:"songs_album/35.jpg"
     },
     {
         id:'36',
-        songName:`Drag Me Down
+        songName:`Bilionera
         <br>
-        <div class="artist">One Direction</div>`,
+        <div class="artist">Otilia Brumă</div>`,
         poster:"songs_album/36.jpg"
     },
     {
         id:'37',
-        songName:`Blank Space
+        songName:`Bijlee
         <br>
-        <div class="artist">Taylor Swift</div>`,
+        <div class="artist">Harrdy Sandhu</div>`,
         poster:"songs_album/37.jpg"
     },
     {
         id:'38',
-        songName:`Closer
+        songName:`Dance meri Rani
         <br>
-        <div class="artist">Chainsmokers</div>`,
+        <div class="artist">Guru Randhawa</div>`,
         poster:"songs_album/38.jpg"
     },
     {
         id:'39',
-        songName:`Wavin Flag
+        songName:`Jugnu
         <br>
-        <div class="artist">K'naan</div>`,
+        <div class="artist">Badshah</div>`,
         poster:"songs_album/39.jpg"
     },
     {
         id:'40',
-        songName:`Duniyaa
+        songName:`Kaise Hua
         <br>
-        <div class="artist">Dhvani Bhanushali</div>`,
+        <div class="artist">Vishal Mishra</div>`,
         poster:"songs_album/40.jpg"
     },
     {
         id:'41',
-        songName:`Perfect
+        songName:`Tenu Lehenga
         <br>
-        <div class="artist">Ed Sheeran</div>`,
+        <div class="artist">Jass Manak</div>`,
         poster:"songs_album/41.jpg"
     },
     {
         id:'42',
-        songName:`Love Me Like You Do
+        songName:`Slow Slow
         <br>
-        <div class="artist">Ellie Goulding</div>`,
+        <div class="artist">Badshah</div>`,
         poster:"songs_album/42.jpg"
     },
     {
         id:'43',
-        songName:`Najaa
+        songName:`Sakhiyan
         <br>
-        <div class="artist">Arijit Singh</div>`,
+        <div class="artist">Maninder Buttar</div>`,
         poster:"songs_album/43.jpg"
     },
     {
         id:'44',
-        songName:`Bekhayali
+        songName:`Do ghoont
         <br>
-        <div class="artist">Sachet Tandon</div>`,
+        <div class="artist">Viplove Rajdeo</div>`,
         poster:"songs_album/44.jpg"
     }
 ]
@@ -340,7 +348,7 @@ let title=document.getElementById('title');
 Array.from(document.getElementsByClassName('songAlbum')).forEach(function(ele){
     ele.addEventListener('click',function(event){
         idx=event.target.id;
-        music.src=`song_album_songs/${idx}.mp3`;
+        music.src=`music_list/${idx}.mp3`;
         bottom_poster.src=`songs_album/${idx}.jpg`;
         music.play();
         playbtn.classList.remove('fa-play');
@@ -438,32 +446,34 @@ vol_input.addEventListener('change',function(){
 
 });
 
-// let backButton=document.getElementById('backButton');
+let backButton=document.getElementById('backButton');
 
 
-// backButton.addEventListener('click',function(){
-//     idx-=1;
-//     if(idx<1){
-    //         idx=Array.from(document.getElementsByClassName('songAlbum')).length;
-    //     }
-    //     music.src=`song_album_songs/${idx}.mp3`;
-    //     bottom_poster.src=`songs_album/${idx}.jpg`;
-    //     music.play();
-    //     playbtn.classList.remove('fa-play');
-    //     playbtn.classList.add('fa-pause');
-    //     wave.classList.add('active2');
-    //     let song_title=songs.filter(function(element){
-        //         return element.id==idx;
-        //     });
-        //     let {songName}=song_title[0];
-        //     title.innerHTML=songName;
-        // })
+backButton.addEventListener('click',function(){
+    idx-=1;
+    if(idx<1){
+            idx=Array.from(document.getElementsByClassName('songAlbum')).length;
+        }
+        music.src=`song_album_songs/${idx}.mp3`;
+        bottom_poster.src=`songs_album/${idx}.jpg`;
+        music.play();
+        playbtn.classList.remove('fa-play');
+        playbtn.classList.add('fa-pause');
+        wave.classList.add('active2');
+        let song_title=songs.filter(function(element){
+                return element.id==idx;
+            });
+            let {songName}=song_title[0];
+            title.innerHTML=songName;
+        })
 
 //next button in bottom player
+
 let nextButton=document.getElementById('nextButton');
 nextButton.addEventListener('click',function(){
+    idx-=0;
     idx+=1;
-    if(idx==Array.from(document.getElementsByClassName('songAlbum')).length){
+    if(idx>Array.from(document.getElementsByClassName('songAlbum')).length){
         idx=1;
     }
     music.src=`song_album_songs/${idx}.mp3`;
@@ -475,8 +485,10 @@ nextButton.addEventListener('click',function(){
     let song_title=songs.filter(function(element){
         return element.id==idx;
     });
-    let {songName}=song_title[0];
-    title.innerHTML=songName;
+    song_title.forEach(ele=>{
+        let {songName}=ele;
+        title.innerHTML=songName;
+    })
 })
 
 
