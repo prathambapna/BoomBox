@@ -315,11 +315,7 @@ Array.from(document.getElementsByClassName('songAlbum')).forEach(function(ele,i)
     ele.getElementsByTagName('h5')[0].innerHTML=songs[i].songName;
 });
 
-//play pause on songs
-//playlist
-//playlist like
-
-
+//bottom player play pause btn
 playbtn.addEventListener('click',function(){
     if(music.paused || music.currentTime<=0)
     {
@@ -336,6 +332,7 @@ playbtn.addEventListener('click',function(){
     }
 });
 
+//on clicking songs=>
 let idx=0;
 let bottom_poster=document.getElementById('bottom_poster');
 let title=document.getElementById('title');
@@ -362,23 +359,19 @@ Array.from(document.getElementsByClassName('songAlbum')).forEach(function(ele){
     })
 });
 
-
+//song bar
 let currentSongStart=document.getElementById('start_time');
 let currentSongEnd=document.getElementById('end_time');
 let song_bar=document.getElementById('song_bar');
 let bar=document.getElementById('bar');
 let dot=document.getElementById('dot');
-let vol_input=document.getElementById('vol_input');
-let vol_bar=document.getElementById('vol_bar');
-let vol_dot=document.getElementById('vol_dot');
-let vol_icon=document.getElementById('vol_icon');
 
 
 
 music.addEventListener('timeupdate',function(){
     let music_curr=music.currentTime;
     let music_dur=music.duration;
-
+    
     let minutes=Math.floor(music_dur/60);
     let seconds=Math.floor(music_dur%60);
     if(seconds<10)
@@ -406,13 +399,19 @@ song_bar.addEventListener('change',function(){
     music.currentTime=song_bar.value*music.duration/100;
 })
 
-
+//if music ends
 music.addEventListener('ended',function(){
     playbtn.classList.remove('fa-pause');
     playbtn.classList.add('fa-play');
     wave.classList.add('active2');
 })
 
+
+//vol bar 
+let vol_input=document.getElementById('vol_input');
+let vol_bar=document.getElementById('vol_bar');
+let vol_dot=document.getElementById('vol_dot');
+let vol_icon=document.getElementById('vol_icon');
 vol_input.addEventListener('change',function(){
     if(vol_input.value==0)
     {
@@ -440,27 +439,28 @@ vol_input.addEventListener('change',function(){
 });
 
 // let backButton=document.getElementById('backButton');
-let nextButton=document.getElementById('nextButton');
 
 
 // backButton.addEventListener('click',function(){
 //     idx-=1;
 //     if(idx<1){
-//         idx=Array.from(document.getElementsByClassName('songAlbum')).length;
-//     }
-//     music.src=`song_album_songs/${idx}.mp3`;
-//     bottom_poster.src=`songs_album/${idx}.jpg`;
-//     music.play();
-//     playbtn.classList.remove('fa-play');
-//     playbtn.classList.add('fa-pause');
-//     wave.classList.add('active2');
-//     let song_title=songs.filter(function(element){
-//         return element.id==idx;
-//     });
-//     let {songName}=song_title[0];
-//     title.innerHTML=songName;
-// })
+    //         idx=Array.from(document.getElementsByClassName('songAlbum')).length;
+    //     }
+    //     music.src=`song_album_songs/${idx}.mp3`;
+    //     bottom_poster.src=`songs_album/${idx}.jpg`;
+    //     music.play();
+    //     playbtn.classList.remove('fa-play');
+    //     playbtn.classList.add('fa-pause');
+    //     wave.classList.add('active2');
+    //     let song_title=songs.filter(function(element){
+        //         return element.id==idx;
+        //     });
+        //     let {songName}=song_title[0];
+        //     title.innerHTML=songName;
+        // })
 
+//next button in bottom player
+let nextButton=document.getElementById('nextButton');
 nextButton.addEventListener('click',function(){
     idx+=1;
     if(idx==Array.from(document.getElementsByClassName('songAlbum')).length){
@@ -479,6 +479,8 @@ nextButton.addEventListener('click',function(){
     title.innerHTML=songName;
 })
 
+
+//back and next in song list
 let back1=document.getElementById('back1');
 let back2=document.getElementById('back2');
 let back3=document.getElementById('back3');
@@ -542,3 +544,17 @@ next6.addEventListener('click',function(){
     for6.scrollLeft+=330;
 })
 
+
+//likes
+let index=0;
+Array.from(document.getElementsByClassName('fa-heart')).forEach(function(ele){
+    ele.addEventListener('click',function(event){
+        index=event.target.id;
+        if(event.target.classList.contains('filled')){
+            event.target.classList.remove('filled');
+        }
+        else{
+            event.target.classList.add('filled');
+        }
+    })
+})
