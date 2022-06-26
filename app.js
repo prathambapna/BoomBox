@@ -1,3 +1,6 @@
+
+
+
 const music=new Audio('demo_song.mp3');
 let playbtn=document.getElementById('playButton');
 let wave=document.getElementsByClassName('wave')[0];
@@ -359,11 +362,11 @@ Array.from(document.getElementsByClassName('songAlbum')).forEach(function(ele){
         });
         let {songName}=song_title[0];
         title.innerHTML=songName;
-        music.addEventListener('ended',function(){
-            playbtn.classList.remove('fa-pause');
-            playbtn.classList.add('fa-play');
-            wave.classList.add('active2');
-        })
+        // music.addEventListener('ended',function(){
+        //     playbtn.classList.remove('fa-pause');
+        //     playbtn.classList.add('fa-play');
+        //     wave.classList.add('active2');
+        // })
     })
 });
 
@@ -407,11 +410,20 @@ song_bar.addEventListener('change',function(){
     music.currentTime=song_bar.value*music.duration/100;
 })
 
-//if music ends
+//if music ends=>autoplay
 music.addEventListener('ended',function(){
-    playbtn.classList.remove('fa-pause');
-    playbtn.classList.add('fa-play');
+    playbtn.classList.remove('fa-play');
+    playbtn.classList.add('fa-pause');
     wave.classList.add('active2');
+    idx++;
+    music.src=`music_list/${idx}.mp3`;
+    bottom_poster.src=`songs_album/${idx}.jpg`;
+    music.play();
+    let song_title=songs.filter(function(element){
+        return element.id==idx;
+    });
+    let {songName}=song_title[0];
+    title.innerHTML=songName;
 })
 
 
